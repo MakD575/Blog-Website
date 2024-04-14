@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+<body>
+    <h1>Welcome to my blog page!</h1>
+    <p>Please use the form below to submit your post.</p>
+    <form action="/blogPost" method="POST">
+        <div class="form-group">
+          <label for="postTitle">Title</label>
+          <input type="text" class="form-control" name="postTitle" placeholder="Enter Title" autofocus required>
+        </div>
+    
+        <div class="form-group">
+          <label for="postContent">Post</label>
+          <textarea class="form-control" name="postContent" rows="3" placeholder="Enter Content" autofocus required></textarea>
+        </div>
+    
+        <button type="submit" class="btn btn-default">Publish</button>
+      </form>
+</body>
+<%- include("partials/footer.ejs") %>
